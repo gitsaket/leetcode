@@ -26,8 +26,8 @@ Output: [0,1]
 
 
 def twoSum(nums, target):
-    if target == 0 or len(nums) == 0:
-        return []
+    #if target == 0 or len(nums) == 0:
+    #    return []
     stack = {}
     for i, n in enumerate(nums):
         needed = target - n
