@@ -42,14 +42,14 @@ def findMedianSortedArrays(nums1, nums2):
     item_count = len(sorted_array)
 
     if item_count % 2 == 0:  # even
-        position = (item_count // 2 ) - 1
+        position = (item_count // 2) - 1
         return (sorted_array[position] + sorted_array[position + 1]) / 2
     else:
         position = (item_count) // 2
         return sorted_array[position]
 
 
-median = findMedianSortedArrays(nums1=[1, 3], nums2=[2])
+median = findMedianSortedArrays(nums1=[1, 3], nums2=[2])  # O(m+n) not O(log(m+n))
 print(median)
 median = findMedianSortedArrays(nums1=[1, 2], nums2=[3, 4])
 print(median)
